@@ -14,8 +14,8 @@
     "dist"
   ],
   "dependencies": {
-    "purescript-coproducts": "0.1.0",
-    "purescript-either": "0.1.4",
-    "purescript-maybe": "0.2.1"
+    "purescript-coproducts": "~0.2.0",
+    "purescript-either": "~0.1.4",
+    "purescript-maybe": "~0.2.1"
   }
 }
