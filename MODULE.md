@@ -2,20 +2,35 @@
 
 ## Module Data.Inject
 
-### Type Classes
+#### `Inject`
 
-    class Inject f g where
-      inj :: forall a. f a -> g a
-      prj :: forall a. g a -> Maybe (f a)
+``` purescript
+class Inject f g where
+  inj :: forall a. f a -> g a
+  prj :: forall a. g a -> Maybe (f a)
+```
 
 
-### Type Class Instances
+#### `injectReflexive`
 
-    instance injectLeft :: Inject f (Coproduct f g)
+``` purescript
+instance injectReflexive :: Inject f f
+```
 
-    instance injectReflexive :: Inject f f
 
-    instance injectRight :: (Inject f g) => Inject f (Coproduct h g)
+#### `injectLeft`
+
+``` purescript
+instance injectLeft :: Inject f (Coproduct f g)
+```
+
+
+#### `injectRight`
+
+``` purescript
+instance injectRight :: (Inject f g) => Inject f (Coproduct h g)
+```
+
 
 
 
