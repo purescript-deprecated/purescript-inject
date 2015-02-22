@@ -12,7 +12,7 @@ var gulp = require('gulp')
           'src/**/*.purs'
         ],
         dest: 'dist',
-        docs: 'MODULE.md'
+        docs: 'README.md'
       }
     }
 ;

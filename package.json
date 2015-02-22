@@ -1,5 +1,4 @@
 {
-  "name": "purescript-inject",
   "private": true,
   "devDependencies": {
     "del": "0.1.3",
