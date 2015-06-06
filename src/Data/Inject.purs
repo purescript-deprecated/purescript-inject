@@ -6,6 +6,8 @@ module Data.Inject
   , inj, prj
   ) where
 
+import Prelude
+
 import Data.Either (Either(..))
 import Data.Functor.Coproduct (Coproduct(..), coproduct)
 import Data.Maybe (Maybe(..))
