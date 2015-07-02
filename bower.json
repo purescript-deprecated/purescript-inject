@@ -1,17 +1,23 @@
 {
   "name": "purescript-inject",
-  "homepage": "https://github.com/purescript-contrib/purescript-inject",
+  "homepage": "https://github.com/purescript/purescript-inject",
   "description": "Inject typeclass",
   "keywords": [
     "purescript"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/purescript/purescript-inject.git"
+  },
   "ignore": [
     "**/.*",
-    "node_modules",
     "bower_components",
-    "examples",
-    "dist"
+    "node_modules",
+    "output",
+    "test",
+    "bower.json",
+    "package.json"
   ],
   "dependencies": {
     "purescript-coproducts": "^0.4.0"
