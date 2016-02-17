@@ -2,11 +2,11 @@
 -- | when working with coproducts of functors.
 
 module Data.Inject
-  ( Inject
+  ( class Inject
   , inj, prj
   ) where
 
-import Prelude
+import Prelude (const, (<<<), id)
 
 import Data.Either (Either(..))
 import Data.Functor.Coproduct (Coproduct(..), coproduct)
@@ -16,15 +16,15 @@ import Data.Maybe (Maybe(..))
 -- |
 -- | Specifically, an instance `Inject f g` indicates that `g` is isomorphic to
 -- | a coproduct of `f` and some third functor.
--- | 
+-- |
 -- | Laws:
--- | 
+-- |
 -- | - `prj g = Just f` if and only if `inj f = g`
 class Inject f g where
   inj :: forall a. f a -> g a
   prj :: forall a. g a -> Maybe (f a)
 
--- | Any functor is isomorphic to the coproduct of itself with the 
+-- | Any functor is isomorphic to the coproduct of itself with the
 -- | constantly-`Void` functor.
 instance injectReflexive :: Inject f f where
   inj = id
