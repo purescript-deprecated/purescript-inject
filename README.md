@@ -12,6 +12,6 @@ Inject typeclass.
 bower install purescript-inject
 ```
 
-## Module documentation
+## Documentation
 
-- [Data.Inject](docs/Data/Inject.md)
+Module documentation is [published on Pursuit](http://pursuit.purescript.org/packages/purescript-inject).
