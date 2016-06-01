@@ -17,6 +17,6 @@
     "package.json"
   ],
   "dependencies": {
-    "purescript-functor-coproducts": "^1.0.0-rc.1"
+    "purescript-functor-coproducts": "^1.0.0"
   }
 }
