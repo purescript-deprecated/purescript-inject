@@ -1,4 +1,4 @@
-module Data.Inject.Either where
+module Data.Inject.Coproduct where
 
 import Prelude
 
@@ -19,5 +19,5 @@ else instance injectRight :: Inject f g => Inject f (Coproduct h g) where
   prj = coproduct (const Nothing) prj
 
 else instance injectReflexive :: Inject f f where
-  inj = id
+  inj = identity
   prj = Just

@@ -18,5 +18,5 @@ else instance injectRight :: Inject a b => Inject a (Either c b) where
   prj = either (const Nothing) prj
 
 else instance injectReflexive :: Inject a a where
-  inj = id
+  inj = identity
   prj = Just
