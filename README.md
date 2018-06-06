@@ -1,16 +1,7 @@
-# purescript-inject
+# DEPRECATED
 
-[![Latest release](http://img.shields.io/github/release/purescript/purescript-inject.svg)](https://github.com/purescript/purescript-inject/releases)
-[![Build status](https://travis-ci.org/purescript/purescript-inject.svg?branch=master)](https://travis-ci.org/purescript/purescript-inject)
+The library is no longer maintained under this repository. An `Inject` class now exists in [`purescript-functors`](https://github.com/purescript/purescript-functors), for `Coproduct`, and another in [`purescript-either`](https://github.com/purescript/purescript-either), for `Either`.
 
-Inject typeclass.
+[The previous releases](https://github.com/purescript-deprecated/purescript-inject/releases) will continue to work for older libraries that still depend on them.
 
-## Installation
 
-```
-bower install purescript-inject
-```
-
-## Documentation
-
-Module documentation is [published on Pursuit](http://pursuit.purescript.org/packages/purescript-inject).
