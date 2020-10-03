@@ -2,10 +2,11 @@
   "name": "purescript-inject",
   "homepage": "https://github.com/purescript/purescript-inject",
   "description": "Inject typeclass",
+  "keywords": ["pursuit-deprecated"],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/purescript/purescript-inject.git"
+    "url": "https://github.com/purescript/purescript-inject.git"
   },
   "ignore": [
     "**/.*",
